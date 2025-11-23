@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    nav {
+      display: flex; justify-content: space-around; align-items: center;
+      padding: 15px 30px; position: sticky; top: 0;
+      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 1400% 1400%; animation: rainbowGradient 20s ease infinite; z-index: 1000;
+    }
+    nav button {
+      padding: 10px 25px; font-weight: bold; font-size: 16px;
+      border: none; border-radius: 5px; cursor: pointer;
+      background: rgba(255, 255, 255, 0.2); color: white; transition: background 0.3s, transform 0.2s;
+    }
+    nav button:hover { background: rgba(255,255,255,0.4); transform: scale(1.05); }
+    @keyframes rainbowGradient { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
+    .content { padding: 50px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="https://th.bing.com/th/id/OIP.OD82FV4RykXuBOS7KyhHGQHaHa?w=171&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+    <div class="logo"><h1>KBX LIMITED</h1></div>
+    <button onclick="goToPage('index.html')">Home</button>
+    <button onclick="goToPage('about.html')">About</button>
+    <button onclick="goToPage('services.html')">Services</button>
+    <button onclick="goToPage('contact.html')">Contact</button>
+  </nav>
+
+  <div class="content">
+    <p><h1>WELCOME TO KBX LIMITED</h1></p>
+  </div>
+
+  <script>
+    function goToPage(file) { window.location.href = file; }
+  </script>
+
+</body>
+</html>
+
+<h2>LEARN CODING WITH OUR FREE VIDEOS</h2>
+<img src="https://tse3.mm.bing.net/th/id/OVP._A0SBVrAQjljLC7VFyOHiAHgFo?pid=Api&h=360&w=480&c=7&rs=1">
+<style>
+  .fancy-button {
+    position: relative;
+    padding: 18px 50px;
+    font-size: 20px;
+    color: #00f0ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 2px solid #00f0ff;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+  }
+
+  /* Hover glow */
+  .fancy-button:hover {
+    color: #fff;
+    background: #00f0ff;
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 80px #00f0ff;
+  }
+
+  /* Animated shine effect */
+  .fancy-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg, 
+      rgba(255,255,255,0.2) 0%, 
+      rgba(255,255,255,0.6) 50%, 
+      rgba(255,255,255,0.2) 100%
+    );
+    transform: skewX(-25deg);
+  }
+
+  .fancy-button:hover::before {
+    animation: shine 1s forwards;
+  }
+
+  @keyframes shine {
+    0% { left: -75%; }
+    100% { left: 125%; }
+  }
+
+  /* Active click effect */
+  .fancy-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff, 0 0 60px #00f0ff;
+  }
+</style>
+
+<a href="https://uk.video.search.yahoo.com/video/play;_ylt=AwrEpKLSKiJpDxoe39x2BQx.;_ylu=c2VjA3NyBHNsawN2aWQEZ3BvcwMx?p=VID+ON+HOW+TO+CODE&vid=770ba3488fa39c25fbc2cb7ddf5a7e46&turl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOVP._A0SBVrAQjljLC7VFyOHiAHgFo%3Fpid%3DApi%26h%3D360%26w%3D480%26c%3D7%26rs%3D1&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWKuNWrxuJ9g&tit=%3Cb%3EHow%3C%2Fb%3E+%3Cb%3Eto%3C%2Fb%3E+Learn+%3Cb%3Eto%3C%2Fb%3E+%3Cb%3ECode%3C%2Fb%3E+-+Best+Resources%2C+%3Cb%3EHow%3C%2Fb%3E+%3Cb%3Eto%3C%2Fb%3E+Choose+a+Project%2C+and+more%21&c=0&sigr=d_xcTPxC5PYj&sigt=UT.iyoNZjJL4&sigi=2oi60fFrgfGI&fr2=p%3As%2Cv%3Av&h=360&w=480&l=785&age=1517037785&fr=mcafee&type=E210GB384G91968&tt=b" class="fancy-button">LEARN NOW</a>
+
+<h2>LEARN PYTHON WITH OUR FREE VIDEOS</h2>
+<img src="https://tse4.mm.bing.net/th/id/OVP.f9FNO45d-4sBSE_OtK2foQHgFo?pid=Api&h=360&w=480&c=7&rs=1">
+<style>
+  .fancy-button {
+    position: relative;
+    padding: 18px 50px;
+    font-size: 20px;
+    color: #00f0ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 2px solid #00f0ff;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* So padding works properly */
+  }
+
+  /* Hover glow */
+  .fancy-button:hover {
+    color: #fff;
+    background: #00f0ff;
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 80px #00f0ff;
+  }
+
+  /* Animated shine effect */
+  .fancy-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg, 
+      rgba(255,255,255,0.2) 0%, 
+      rgba(255,255,255,0.6) 50%, 
+      rgba(255,255,255,0.2) 100%
+    );
+    transform: skewX(-25deg);
+  }
+
+  .fancy-button:hover::before {
+    animation: shine 1s forwards;
+  }
+
+  @keyframes shine {
+    0% { left: -75%; }
+    100% { left: 125%; }
+  }
+
+  /* Active click effect */
+  .fancy-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff, 0 0 60px #00f0ff;
+  }
+</style>
+
+<a href="https://uk.video.search.yahoo.com/video/play;_ylt=AwrEpKLSKiJpDxoe5dx2BQx.;_ylu=c2VjA3NyBHNsawN2aWQEZ3BvcwM0?p=VID+ON+HOW+TO+CODE&vid=046f748c26c67aee2312a92dcc9ad0dc&turl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOVP.f9FNO45d-4sBSE_OtK2foQHgFo%3Fpid%3DApi%26h%3D360%26w%3D480%26c%3D7%26rs%3D1&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkqtD5dpn9C8&tit=Python+for+Beginners+-+Learn+Coding+with+Python+in+1+Hour&c=3&sigr=a6NCy1OV.kV5&sigt=vFnUn6C6ZIGt&sigi=frLHNiOJDqjm&fr2=p%3As%2Cv%3Av&h=360&w=480&l=3606&age=1600261220&fr=mcafee&type=E210GB384G91968&tt=b" class="fancy-button">LEARN NOW</a>
+
+<h2>LEARN ETHICAL HACKING WITH OUR FREE SAMPLE VIDEOS</h2>
+<img src="https://tse2.mm.bing.net/th/id/OVP.GfXA1GLlNsGu80UKzQfgBwHgFo?pid=Api&h=360&w=480&c=7&rs=1">
+<style>
+  .fancy-button {
+    position: relative;
+    padding: 18px 50px;
+    font-size: 20px;
+    color: #00f0ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 2px solid #00f0ff;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* So padding works properly */
+  }
+
+  /* Hover glow */
+  .fancy-button:hover {
+    color: #fff;
+    background: #00f0ff;
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 80px #00f0ff;
+  }
+
+  /* Animated shine effect */
+  .fancy-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg, 
+      rgba(255,255,255,0.2) 0%, 
+      rgba(255,255,255,0.6) 50%, 
+      rgba(255,255,255,0.2) 100%
+    );
+    transform: skewX(-25deg);
+  }
+
+  .fancy-button:hover::before {
+    animation: shine 1s forwards;
+  }
+
+  @keyframes shine {
+    0% { left: -75%; }
+    100% { left: 125%; }
+  }
+
+  /* Active click effect */
+  .fancy-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff, 0 0 60px #00f0ff;
+  }
+</style>
+
+<a href="https://uk.video.search.yahoo.com/video/play;_ylt=AwrFSJWSLSJpgB8DT4V2BQx.;_ylu=c2VjA3NyBHNsawN2aWQEZ3BvcwMz?p=video+ON+HOW+TO+HACK&vid=75718730a06d35740f7971d290101475&turl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOVP.GfXA1GLlNsGu80UKzQfgBwHgFo%3Fpid%3DApi%26h%3D360%26w%3D480%26c%3D7%26rs%3D1&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D51Z7G6J_AsA&tit=Top+10+HACKING+Techniques+%282025%29+%7C+Cyber+Attack+Strategies+%7C+Top+Hacking+Methods+%7C+Edureka&c=2&sigr=BewpkpMgvWvg&sigt=M.RM.AT8VfPK&sigi=0iFCmgWJUmmx&fr2=p%3As%2Cv%3Av&h=360&w=480&l=540&age=1741013780&fr=mcafee&type=E210GB384G91968&tt=b" class="fancy-button">LEARN NOW</a>
